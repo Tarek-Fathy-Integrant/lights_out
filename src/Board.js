@@ -49,7 +49,7 @@ class Board extends Component {
     flipCell(y, x + 1);
     flipCell(y, x - 1);
     let hasWon = board.every(row => row.every(cell => !cell));
-    
+
     this.setState({ board, hasWon });
   }
   makeTable() {
